@@ -1,6 +1,7 @@
 <template>
 	<view>
-		购物车
+		<!-- 搜索框 -->
+		<uni-search-bar @confirm="search" @input="input" ></uni-search-bar>
 	</view>
 </template>
 
