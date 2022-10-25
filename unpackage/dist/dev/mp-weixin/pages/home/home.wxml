@@ -1,1 +1,1 @@
-<view>首页</view>
+<view><view class="title"><text>天使童装</text><view class="input"><input type="text" placeholder="输入搜索关键字" data-event-opts="{{[['focus',[['toSearchlist',['$event']]]]]}}" bindfocus="__e"/></view></view><swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}"><block wx:for="{{lbt}}" wx:for-item="item" wx:for-index="index" wx:key="index"><swiper-item><image src="{{item.picUrl}}" mode></image></swiper-item></block></swiper></view>
