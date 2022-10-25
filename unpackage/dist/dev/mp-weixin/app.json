@@ -6,7 +6,15 @@
     "pages/my/my",
     "pages/coupon/coupon"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "search_list/search_list",
+        "search_detail/search_detail"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "天使童装",
