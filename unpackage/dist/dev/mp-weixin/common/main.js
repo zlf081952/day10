@@ -21,7 +21,7 @@ var _requestMiniprogram = __webpack_require__(/*! @escook/request-miniprogram */
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;_vue.default.config.productionTip = false; //导入第三方模块
 uni.$http = _requestMiniprogram.$http;
 //设置请求基地址
-_requestMiniprogram.$http.baseUrl = 'https://www.showdoc.com.cn';
+_requestMiniprogram.$http.baseUrl = 'https://api.it120.cc';
 
 //设置请求拦截器
 _requestMiniprogram.$http.beforeRequest = function () {
