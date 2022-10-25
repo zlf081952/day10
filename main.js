@@ -10,7 +10,7 @@ import {$http} from '@escook/request-miniprogram'
 uni.$http = $http
 
 //设置请求基地址
-$http.baseUrl ='https://www.showdoc.com.cn'
+$http.baseUrl ='https://api.it120.cc'
 
 //设置请求拦截器
 $http.beforeRequest = function(){
