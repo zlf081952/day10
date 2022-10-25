@@ -163,6 +163,11 @@ var _default =
                   uni.$http.get('/hjl/banner/list'));case 2:_yield$uni$$http$get = _context.sent;res = _yield$uni$$http$get.data;
                 console.log(res);
                 _this.lbt = res.data.slice(4, 7);case 6:case "end":return _context.stop();}}}, _callee);}))();
+    },
+    toSearchlist: function toSearchlist() {
+      uni.navigateTo({
+        url: '/subpkg/search_detail/search_detail' });
+
     } },
 
 

@@ -3,7 +3,7 @@
 		<view class="title">
 			<text>天使童装</text>
 			<view class="input">
-				<input type="text" placeholder="输入搜索关键字">
+				<input type="text" placeholder="输入搜索关键字" @focus="toSearchlist">
 			</view>
 		</view>
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
@@ -29,6 +29,11 @@
 				} = await uni.$http.get('/hjl/banner/list')
 				console.log(res);
 				this.lbt = res.data.slice(4, 7)
+			},
+			toSearchlist() {
+				uni.navigateTo({
+					url: '/subpkg/search_detail/search_detail'
+				})
 			}
 
 		},
