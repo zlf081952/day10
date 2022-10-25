@@ -17,7 +17,12 @@
 			};
 		},
 		methods: {
-			getlbt() {}
+			async getlbt() {
+				let {
+					data: res
+				}
+				await uni.$http.get('')
+			}
 		},
 		mounted() {
 			this.getlbt()
