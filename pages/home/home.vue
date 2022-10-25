@@ -1,6 +1,11 @@
 <template>
 	<view>
-		首页
+		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
+			<swiper-item>
+				<view class="swiper-item"></view>
+			</swiper-item>
+
+		</swiper>
 	</view>
 </template>
 
@@ -8,8 +13,14 @@
 	export default {
 		data() {
 			return {
-				
+				lbt: []
 			};
+		},
+		methods: {
+			getlbt() {}
+		},
+		mounted() {
+			this.getlbt()
 		}
 	}
 </script>
