@@ -5,6 +5,24 @@ import App from './App'
 
 Vue.config.productionTip = false
 
+//导入第三方模块
+import {$http} from '@escook/request-miniprogram'
+uni.$http = $http
+
+//设置请求基地址
+$http.baseUrl ='https://www.showdoc.com.cn'
+
+//设置请求拦截器
+$http.beforeRequest = function(){
+	uni.showLoading({
+		title:"正在加载中···"
+	})
+}
+//设置响应了拦截器
+$http.afterRequest=function(){
+	//关闭加载提示
+	uni.hideLoading()
+}
 App.mpType = 'app'
 
 const app = new Vue({
