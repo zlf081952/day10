@@ -1,1 +1,17 @@
-/* subpkg/search_detail/search_detail.wxss */
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.history_list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.history_list button {
+  width: 70px;
+  height: 25px;
+  font-size: 12px;
+  margin-left: 250px;
+}
+
