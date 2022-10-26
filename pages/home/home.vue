@@ -55,21 +55,21 @@
 			async getlbt() {
 				let {
 					data: res
-				} = await uni.$http.get('/hjl/banner/list')
-				// console.log(res);
+				} = await uni.$http.get('banner/list')
+				console.log(res);
 				this.lbt = res.data.slice(4, 7)
 			},
 			async getlist() {
 				let {
 					data: res
-				} = await uni.$http.post('/hjl/shop/goods/list/v2')
+				} = await uni.$http.post('shop/goods/list/v2')
 
 				this.list = res.data.result
-				console.log(this.list);
+				// console.log(this.list);
 			},
 			toSearchlist() {
 				uni.navigateTo({
-					url: '/subpkg/search_detail/search_detail'
+					url: '/subpkg/search_history/search_history'
 				})
 			}
 
@@ -90,7 +90,11 @@
 		line-height: 40px;
 		display: flex;
 		margin-bottom: 5px;
-
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0rpx;
+		z-index: 99;
+		background-color: #eee;
 		text {
 			font-weight: 900;
 			margin-left: 15px;
@@ -103,6 +107,7 @@
 			height: 40px;
 			border-radius: 20px;
 			padding-left: 19px;
+			line-height: 40px;
 		}
 	}
 

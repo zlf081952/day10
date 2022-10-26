@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+._h1.data-v-15c4039a {
+  padding: 20rpx;
+  color: #777;
+  border-bottom: 1px solid #ccc;
+}
+.his.data-v-15c4039a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 1px solid #ddd;
+}
+

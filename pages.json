@@ -7,92 +7,78 @@
 		}
 
 	}, {
-		"path": "pages/cart/cart",
+		"path": "pages/cate/cate",
 		"style": {
-			"navigationBarTitleText": "购物车",
+			"navigationBarTitleText": "天使童装",
 			"enablePullDownRefresh": false
 		}
 
 	}, {
-		"path": "pages/cate/cate",
+		"path": "pages/cart/cart",
 		"style": {
-			"navigationBarTitleText": "分类",
+			"navigationBarTitleText": "天使童装",
 			"enablePullDownRefresh": false
 		}
 
 	}, {
 		"path": "pages/my/my",
 		"style": {
-			"navigationBarTitleText": "我的",
+			"navigationBarTitleText": "天使童装",
 			"enablePullDownRefresh": false
 		}
 
-	}, {
-		"path": "pages/coupon/coupon",
-		"style": {
-			"navigationBarTitleText": "优惠卷",
-			"enablePullDownRefresh": false
-		}
+	}],
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [
 
+			{
+				"path": "search_list/search_list",
+				"style": {
+					"navigationBarTitleText": "商品列表",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "search_history/search_history",
+				"style": {
+					"navigationBarTitleText": "搜一搜",
+					"enablePullDownRefresh": false
+				}
+
+			}
+		]
 	}],
 	"tabBar": {
 		"list": [{
 				"pagePath": "pages/home/home",
 				"text": "首页",
-				"iconPath": "./static/tab_pic/首页.png",
-				"selectedIconPath": "./static/tab_pic/首页-填充.png"
+				"selectedIconPath": "/static/tab_icons/home-active.png",
+				"iconPath": "/static/tab_icons/home.png"
 			},
 			{
 				"pagePath": "pages/cate/cate",
 				"text": "分类",
-				"iconPath": "./static/tab_pic/分类.png",
-				"selectedIconPath": "./static/tab_pic/分类-填充.png"
-			},
-			{
-				"pagePath": "pages/coupon/coupon",
-				"text": "优惠卷",
-				"iconPath": "./static/tab_pic/优惠卷.png",
-				"selectedIconPath": "./static/tab_pic/优惠卷-填充.png"
+				"selectedIconPath": "/static/tab_icons/cate-active.png",
+				"iconPath": "static/tab_icons/cate.png"
 			},
 			{
 				"pagePath": "pages/cart/cart",
 				"text": "购物车",
-				"iconPath": "./static/tab_pic/购物车.png",
-				"selectedIconPath": "./static/tab_pic/购物车-填充.png"
+				"selectedIconPath": "/static/tab_icons/cart-active.png",
+				"iconPath": "/static/tab_icons/cart.png"
 			},
 			{
 				"pagePath": "pages/my/my",
 				"text": "我的",
-				"iconPath": "./static/tab_pic/我的.png",
-				"selectedIconPath": "./static/tab_pic/我的-填充.png"
+				"selectedIconPath": "/static/tab_icons/my-active.png",
+				"iconPath": "/static/tab_icons/my.png"
 			}
 		]
 	},
-	"subPackages": [{
-		"root": "subpkg",
-		"pages": [{
-                    "path" : "search_list/search_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-                ,{
-                    "path" : "search_detail/search_detail",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "搜一搜",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "天使童装",
+		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {

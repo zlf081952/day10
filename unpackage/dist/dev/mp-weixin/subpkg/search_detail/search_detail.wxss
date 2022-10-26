@@ -1,17 +1,40 @@
 @charset "UTF-8";
 /* 水平间距 */
 /* 水平间距 */
-.history_list {
+.search {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding: 10px 10px;
-  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
 }
-.history_list button {
-  width: 70px;
-  height: 25px;
-  font-size: 12px;
-  margin-left: 250px;
+.sear_tag {
+  width: 100%;
+  margin-top: 8px;
+}
+.sear_tag .search_text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.sear_tag .search_text text {
+  width: 30px;
+  height: 100%;
+}
+.sear_tag .search_text button {
+  margin-left: 230px;
+}
+.list {
+  display: flex;
+  line-height: 40px;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid gray;
+}
+.list text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
