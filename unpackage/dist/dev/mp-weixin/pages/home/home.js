@@ -156,11 +156,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
-      lbt: [] };
+      lbt: [],
+      list: [] };
 
   },
   methods: {
@@ -168,8 +197,16 @@ var _default =
 
 
                   uni.$http.get('/hjl/banner/list'));case 2:_yield$uni$$http$get = _context.sent;res = _yield$uni$$http$get.data;
-                console.log(res);
-                _this.lbt = res.data.slice(4, 7);case 6:case "end":return _context.stop();}}}, _callee);}))();
+                // console.log(res);
+                _this.lbt = res.data.slice(4, 7);case 5:case "end":return _context.stop();}}}, _callee);}))();
+    },
+    getlist: function getlist() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var _yield$uni$$http$post, res;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
+
+
+                  uni.$http.post('/hjl/shop/goods/list/v2'));case 2:_yield$uni$$http$post = _context2.sent;res = _yield$uni$$http$post.data;
+
+                _this2.list = res.data.result;
+                console.log(_this2.list);case 6:case "end":return _context2.stop();}}}, _callee2);}))();
     },
     toSearchlist: function toSearchlist() {
       uni.navigateTo({
@@ -180,6 +217,7 @@ var _default =
 
   mounted: function mounted() {
     this.getlbt();
+    this.getlist();
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

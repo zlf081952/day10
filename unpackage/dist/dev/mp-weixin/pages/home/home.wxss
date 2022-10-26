@@ -23,4 +23,39 @@
 swiper image {
   width: 100%;
 }
+.nav_ul {
+  width: 100%;
+  height: 260rpx;
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  padding-left: 15px;
+}
+.nav_ul ._li {
+  flex: 20%;
+}
+.p {
+  width: 100%;
+  text-align: center;
+}
+.list {
+  width: 100%;
+}
+.list ._ul {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list ._ul image {
+  width: 100%;
+}
+.list ._ul ._li {
+  width: 46%;
+  border: 1px solid #ccc;
+  margin: 5px;
+  border-radius: 8px;
+}
 
